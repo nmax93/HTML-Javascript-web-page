@@ -1,0 +1,125 @@
+* { 
+	padding:0;
+	margin:0;
+}
+header, main, footer {
+	background-color: #f6f9f9;
+	font-family: Arial;
+	display: block;
+	width: 100%;
+}
+a {	text-decoration: none; }
+
+.logo {
+	font-family: Bernard MT Condensed;
+	font-size: 30px;
+	color: #fb203e;	
+	background: url(../images/logo.png) no-repeat left center;
+	width: 197px;
+	text-align: right;
+	display: inline-block;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+nav {
+	display: inline-block;
+	font-size: 30px;
+	font-family: Bernard MT Condensed;
+	color: #0b2021;
+	padding-left: 110px;
+}
+nav a {
+	color: #264951;
+}
+nav a:hover {
+	color: #6d7b7e;
+}
+.cover {
+	background: url(../images/cover.jpg) no-repeat;
+	height: 800px;
+	text-align: center;
+}
+.cover h1 {
+	font-size: 64px;
+	margin-top: 240px;
+	color: #ffffff;
+	border-bottom:#15a4fa solid 2px;
+	display: inline-block;
+}
+.cover p {
+	margin-top: 40px;
+	color: #ffffff;
+	font-size: 15px;
+}
+.cover a {	
+	margin-top: 85px;
+	color: #ffffff;
+	font-size: 13px;
+	border: #15a4fa solid 1px;
+	padding: 20px;
+	display: inline-block;
+}
+.info {
+	height: 340px;
+}
+.info h2 {
+	font-size: 26px;
+	margin-top: 90px;
+	text-align: center;
+	font-family: Myriad Hebrew;
+	color: #2d3950;
+}
+.info p {
+	color: #999999;
+	font-size: 15px;
+	padding-top: 15px;
+	text-align: center;
+}
+.prog {
+	background-color: #ffffff;
+	height: 600px;
+	display: block;
+}
+.prog h2 {
+	font-size: 28px;
+	padding-top: 78px;
+	text-align: center;
+	color: #2d3950;
+	padding-bottom: 60px;
+}
+.prog li {
+	height: 100px;
+	font-family: Courier New;
+	font-size: 18px;
+}
+.prog-pic20 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	height: 100px;
+	width: 100px;
+	display: inline-block;
+	vertical-align:middle;
+}
+.prog-pic30 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	height: 100px;
+	width: 100px;
+	display: inline-block;
+	vertical-align: middle;
+}
+footer img {
+	margin-top: 25px;
+	margin-bottom: 25px;
+	margin-left: 5px;
+	height: 40px;
+	width: 40px;
+	vertical-align: middle;
+}
+footer h3 {
+	font-family: Myriad Pro;
+	padding-left: 15px;
+	font-size: 9px;
+	color: #999999;
+	display: inline-block;
+}
