@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Max's form</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="includes/style.css">
+	<script src="includes/main.js" async></script>
+</head>
+<body>
+	<main>
+		<form action="http://html5-book.co.il/teach/forms/get_form2.php" method="get" autocomplete="on">
+			<h1>Join Our Members Club</h1>
+			<p>Full Name: <label><input required name = "fullName" type = "text" pattern=".{6,12}" title="must be 6 to 12 charecters"></label></p>
+			<p>Password: <label><input required name = "pass" type = "password" pattern="?=.*([A-Za-z])" title="must contain at least 1 letter"></label></p>
+			<p>E-Mail: <label><input name = "mail" type = "email"></label></p>
+			<p>Your Website: <label><input name = "website" type = "url" pattern="https?://.+" title="include https://"></label></p>
+			<p>Phone: <label><input name = "phone" type = "tel" pattern="\d*" title="only numbers are allowed"></label></p>
+			<p>How Much Coffe You Dring A Day?: <label><input name = "coffee" type = "number" value="2" min="0" max="100"></label></p>
+			<p>Tempiture: <label>0<input id = "temp" name="temper" type="range" min="0" max="100">100</label></p>
+			<p>Address: <label><textarea name = "address" type = "text"></textarea></label></p>
+			<h3>Hobbies:</h3>
+				<label>Football <input name="interests[]" type="checkbox" value="football"></label><br>
+				<label>Basketball <input name="interests[]" type="checkbox" value="basketball"></label><br>
+				<label>Guitar <input name="interests[]" type="checkbox" value="guitar"></label><br>
+				<label>Reading Books <input name="interests[]" type="checkbox" value="reading books"></label><br>
+			<h3>Gender: </h3>
+				<label>Male <input name="gender" type="radio" value="male"></label><br>
+				<label>Female <input name="gender" type="radio" value="female"></label><br><br>
+			<p>Age:<select id = "age" name = "age"></select></p><br>
+			<label><input type="submit" value="Submit"></label>
+		</form>
+	</main>
+	<footer id = "subscribers">663965</footer>
+</body>
+</html>

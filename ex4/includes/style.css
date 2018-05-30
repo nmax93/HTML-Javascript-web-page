@@ -1,0 +1,31 @@
+* { margin: 0; padding: 0; }
+
+body { background-image: url("../images/pic.png"); }
+
+main { 
+	width: 500px;
+	height: auto;
+	display: block;
+}
+
+p, h3, h1, footer { 
+	font-family: Bernard MT Condensed;
+	color: #a73922;	 
+	padding: 5px;
+}
+
+label, select { 
+	float: right; 
+	width: 200px; 
+}
+
+input, textarea { border-radius: 1px; }
+
+footer {
+	display: block;
+	background-color: #333333;
+	height: 50px;
+	bottom: 0;
+	position: fixed;
+	width: 100%;
+}
