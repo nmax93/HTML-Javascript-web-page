@@ -32,6 +32,17 @@
 			<label><input type="submit" value="Submit"></label>
 		</form>
 	</main>
+	<script>
+      window.onload = function () {
+        var subs = 663965;
+        setInterval(function() {
+          var ftr = document.getElementById('subscribers');
+          subs++;
+
+          ftr.textContent = subs;
+        }, 3000);
+      }
+    </script>
 	<footer id = "subscribers">663965</footer>
 </body>
 </html>
