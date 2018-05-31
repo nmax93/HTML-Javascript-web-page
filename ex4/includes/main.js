@@ -6,11 +6,4 @@ $("document").ready(function () {
 		$("#age").append(op);
 		count++;
 	}
-
-	var subs = 663965;
-	setInterval(function() {
-		var ftr = $('#subscribers');
-		subs++;
-		ftr.html(subs);
-	}, 3000);
 });
