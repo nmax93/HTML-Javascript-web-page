@@ -1,6 +1,6 @@
 * { margin: 0; padding: 0; }
 
-header, main, footer { display: block; }
+header, main { display: block; }
 
 .left_float { float: left; }
 
@@ -26,20 +26,9 @@ header a:hover {
 
 main { min-height: 550px; }
 
-nav a { 
-	width: 20%; 
-	text-align: center;
-}
-
 i {
 	color: #cdcdcd;
 	vertical-align: middle;
-}
-
-footer {
-	height: 45px;
-	line-height: 40px;
-	background-color: #fefefe;
 }
 
 td, th { line-height: 50px; }
@@ -121,3 +110,35 @@ h1 { padding-left: 15px; }
     bottom: 0;
     background-color: #ffffff;
 }
+
+.tocbac {
+	height: auto;
+	width: 100%;
+	padding-left: 50px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.tocbac_text{
+	font-family: Arial;
+	font-size: 16px;
+	display: block;
+	padding: 15px;
+}
+
+.tocbak_price {
+	background-color: #c1d9ff;
+	font-size: 20px;
+}
+
+.tocbac_pic {
+	margin-right: 15px;
+	line-height: 40px;
+}
+
+.tocbac_comm {
+	margin-left: 50px;
+	width: 400px;
+}
+
+.tocbac_mar { margin-left: 20px; }
