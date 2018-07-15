@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Price Breakdown</title>
+	<title>Camera</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="includes/css/style.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -32,60 +32,9 @@
 				<a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Sign-out</a>
 				<div><img id="logo" src="images/logo.png"></div>
 			</div>
-			<div>
-				<h1>Cart</h1>
-			</div>
-			<table class="table">
-				<thead>
-				    <tr>
-						<th scope="col">#</th>				    	
-						<th scope="col">Item</th>
-						<th scope="col">Colour</th>
-						<th scope="col">Size</th>
-						<th scope="col">Brand</th>
-						<th scope="col">Price($)</th>				      
-				    </tr>
-				</thead>
-				<tbody>
-						<tr>
-							<th scope="row">1</th>
-							<td><a href="price_breakdown.php"><img src="images/T-Shirt-icon.png"></a></td>
-							<td><img src="images/red-icon.png"></td>
-							<td>L</td>
-							<td>Lorem ipsum</td>
-							<td>100</td>
-						</tr>
-					<tr>
-						<th scope="row">2</th>
-						<td><a href="price_breakdown.php"><img src="images/Pants-icon.png"></a></td>						
-						<td><img src="images/purple-icon.png"></td>
-						<td>32</td>
-						<td>Lorem ipsum</td>
-						<td>100</td>
-					</tr>
-					<tr>
-						<th scope="row">3</th>
-						<td><a href="price_breakdown.php"><img src="images/Shirt-icon.png"></a></td>						
-						<td><img src="images/green-icon.png"></td>
-						<td>L</td>
-						<td>Lorem ipsum</td>
-						<td>100</td>
-					</tr>
-					<tr>
-						<th scope="row">4</th>
-						<td><a href="price_breakdown.php"><img src="images/Hoody-icon.png"></a></td>						
-						<td><img src="images/yellow-icon.png"></td>
-						<td>XL</td>
-						<td>Lorem ipsum</td>
-						<td>100</td>
-					</tr>
-				</tbody>
-			</table>
-			<div>
-				<p>Number of items: 4</p>
-				<p>Total cost: 400$</p>
-				<p>Exceeded the budget: 15$</p>
-			</div>
+			<div class="align">
+			<a href="price_breakdown.php"><img src="images/camera.jpg"></a>
+		</div>
 		</main>
 	</div>
 </body>
