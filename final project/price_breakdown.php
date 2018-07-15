@@ -1,6 +1,17 @@
 <?php
-	include 'db.php';
-
+   	$dbhost = "182.50.133.51" ;
+	$dbuser = "studDB18A" ;
+	$dbpass = "stud18aDB1!" ;
+	$dbname = "studDB18A" ;
+	$link = mysqli_connect ($dbhost, $dbuser, $dbpass, $dbname);
+	
+	if(mysqli_connect_errno ()) {
+		die("DB connection failed: " . mysqli_connect_error () . " (" .
+		mysqli_connect_errno () . ")"
+);
+}
+?>
+<?php
 	$query = "SELECT * FROM tb_tocbac_228";
 	$result = mysqli_query($connection, $query);
 	if(!$result) {
@@ -89,37 +100,24 @@
 			<section class="price_br price_br_blue left_float"> Wisdom of the crowd:</section>
 			<section class="price_br left_float">170$</section>
 			<h4 class="tocbac_mar">Comments</h4>
-			<form action="insert_comment.php" class="tocbac_comm" method="post">
+			<form class="tocbac_comm">
 				<div class="form-group">
-					<textarea name="comment" class="form-control" aria-label="With textarea" placeholder="Add comment here..."></textarea>
+					<textarea class="form-control" aria-label="With textarea">Add comment here...</textarea>
 				</div>
 				<div class="form-group">
-				    <label><input name="price" type="text" class="form-control" pattern="\d*" title="only numbers are allowed" placeholder="Your Price"></label>
+				    <label><input type="text" class="form-control" pattern="\d*" title="only numbers are allowed" placeholder="Your Price"></label>
 				    <button type="submit" class="btn btn-primary">Send</button>
 				</div>
 			</form>
 			<?php
-				echo'<section> ';
-				while($row = mysqli_fetch_assoc($result)){					
-					echo'<article ';
-					if($row["name"] == "My Comment"){
-						echo'id = "mycom"';
-					}
-					echo' class="tocbac">
+				echo"<section>";
+				while($row = mysqli_fetch_assoc($result)){
+					echo'<article id="mycom" class="tocbac">
 					<a href="#" class="tocbac_pic"><i class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i></a>
-					<a href="#">' . $row["name"] . '</a><p ';
-					if($row["name"] == "My Comment"){
-						echo'id = "mycomtxt"';
-					}
-					echo' class="tocback_text">' . $row["text"] . '</p><h6>My Price: </h6><h6 ';
-					if($row["name"] == "My Comment"){
-						echo'id = "mycomprc"';
-					}					
-					echo'>' . $row["myprice"] . '</h6>';
-					if($row["name"] == "My Comment"){
-						echo'<a id="edit" href="#">Edit </a><a href="delete_comment.php"> Delete';
-					}
-					echo'</article>';
+					<a href="#">' . $row["name"] . '</a>
+					<p id="comcontx" class="tocback_text">' . $row["text"] . '</p>
+					<h6 id="comprice">My Price: ' . $row["myprice"] . '</h6>
+					<a id="edit" href="#">Edit</a></article>';
 				}
 				echo"</section>";
 			?>
